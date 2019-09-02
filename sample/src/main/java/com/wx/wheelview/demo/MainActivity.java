@@ -123,6 +123,8 @@ public class MainActivity extends Activity {
         commonWheelView.setWheelAdapter(new ArrayWheelAdapter(this));
         commonWheelView.setSkin(WheelView.Skin.Common);
         commonWheelView.setWheelData(createArrays());
+        commonWheelView.setWheelClickable(true);
+        commonWheelView.setClickToPosition(true);
 
         simpleWheelView = (WheelView) findViewById(R.id.simple_wheelview);
         simpleWheelView.setWheelAdapter(new SimpleWheelAdapter(this));
@@ -131,6 +133,7 @@ public class MainActivity extends Activity {
         simpleWheelView.setSkin(WheelView.Skin.None);
         simpleWheelView.setLoop(true);
         simpleWheelView.setWheelClickable(true);
+        simpleWheelView.setClickToPosition(true);
         simpleWheelView.setOnWheelItemClickListener(new WheelView.OnWheelItemClickListener() {
             @Override
             public void onItemClick(int position, Object o) {
