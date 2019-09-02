@@ -42,7 +42,7 @@ public class SimpleBookAdapter extends BaseWheelAdapter<Book> {
             convertView = new WheelItem(mContext);
         }
         WheelItem item = (WheelItem) convertView;
-        item.setImage(mList.get(position).getThumbnail());
+        //item.setImage(mList.get(position).getThumbnail());
         item.setText(mList.get(position).getName());
         return convertView;
     }
